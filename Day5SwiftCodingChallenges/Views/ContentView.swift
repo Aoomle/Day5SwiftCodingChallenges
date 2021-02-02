@@ -74,7 +74,10 @@ struct HitMetButton: View {
     )
     .alert(isPresented: $alertIsVisible, content: {
       let roundValue = Int(sliderValue.rounded())
-      return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
+      let points = game.points(sliderValue: roundValue)
+      return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(points) points"), message: Text(""), dismissButton: .default(Text("Awesome!")){
+        game.startNewRound(points: points)
+      })
     })
   }
 }
