@@ -56,6 +56,7 @@ struct HitMetButton: View {
   var body: some View {
     Button(action: {
       alertIsVisible = true
+      game.points(sliderValue: Int(sliderValue.rounded()))
     }) {
       Text("Hit Me".uppercased())
         .bold()
