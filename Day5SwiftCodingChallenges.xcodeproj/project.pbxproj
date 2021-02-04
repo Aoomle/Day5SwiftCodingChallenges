@@ -19,6 +19,7 @@
 		473529FE25C9F82200E5C675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473529F925C9F82200E5C675 /* AppDelegate.swift */; };
 		47352A0025C9F82200E5C675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473529FB25C9F82200E5C675 /* SceneDelegate.swift */; };
 		47352A0C25CA012700E5C675 /* Day5SwiftCodingChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47352A0B25CA012700E5C675 /* Day5SwiftCodingChallengesTests.swift */; };
+		47EDC8FF25CBF0FC001FC77E /* Rings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC8FE25CBF0FC001FC77E /* Rings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		47352A0925CA012700E5C675 /* Day5SwiftCodingChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day5SwiftCodingChallengesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47352A0B25CA012700E5C675 /* Day5SwiftCodingChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5SwiftCodingChallengesTests.swift; sourceTree = "<group>"; };
 		47352A0D25CA012700E5C675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EDC8FE25CBF0FC001FC77E /* Rings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				473529E625C9F7DA00E5C675 /* BackgroundView.swift */,
 				473529E725C9F7DA00E5C675 /* RoundViews.swift */,
 				473529E825C9F7DA00E5C675 /* Shapes.swift */,
+				47EDC8FE25CBF0FC001FC77E /* Rings.swift */,
 				473529E925C9F7DA00E5C675 /* ContentView.swift */,
 			);
 			path = Views;
@@ -251,6 +254,7 @@
 				473529EB25C9F7DA00E5C675 /* BackgroundView.swift in Sources */,
 				473529EE25C9F7DA00E5C675 /* ContentView.swift in Sources */,
 				473529FE25C9F82200E5C675 /* AppDelegate.swift in Sources */,
+				47EDC8FF25CBF0FC001FC77E /* Rings.swift in Sources */,
 				473529EA25C9F7DA00E5C675 /* TextViews.swift in Sources */,
 				473529EC25C9F7DA00E5C675 /* RoundViews.swift in Sources */,
 				47352A0025C9F82200E5C675 /* SceneDelegate.swift in Sources */,
