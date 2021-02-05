@@ -62,6 +62,8 @@ struct BottomView: View {
 }
 
 struct RingsCircle: View {
+  @Environment (\.colorScheme) var colorScheme
+  
   var body: some View {
     
     ZStack {
@@ -69,10 +71,11 @@ struct RingsCircle: View {
         .edgesIgnoringSafeArea(.all)
       ForEach(1..<5) { size in
         let size = CGFloat(100 * size)
+        let opacity = colorScheme == .dark ? 0.1 : 0.3
         Circle()
           .stroke(lineWidth: 20.0)
           .fill(
-            RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(0.3 * 0.8), Color("RingsColor").opacity(0)]), center: .center, startRadius: 100, endRadius: 300)
+            RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(opacity), Color("RingsColor").opacity(0)]), center: .center, startRadius: 100, endRadius: 300)
               )
           .frame(width: size, height: size)
       }
