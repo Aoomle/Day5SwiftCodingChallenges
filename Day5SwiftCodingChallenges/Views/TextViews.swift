@@ -57,6 +57,22 @@ struct LabelText: View {
   }
 }
 
+struct BodyText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+  }
+}
+
+struct ButtonText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+  }
+}
+
 struct TextView_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
