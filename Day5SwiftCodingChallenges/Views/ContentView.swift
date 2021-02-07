@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var alertIsVisible = true
+  @State var alertIsVisible = false
   @State var sliderValue = 50.0
   @State private var game = Game()
   
@@ -22,10 +22,9 @@ struct ContentView: View {
         if alertIsVisible {
           PointViews(alertIsVisble: $alertIsVisible, sliderValue: $sliderValue, game: $game)
         } else {
-          PointViews(alertIsVisble: $alertIsVisible, sliderValue: $sliderValue, game: $game)
-          //PointViews(game: $game)
+          HitMetButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
         }
-//        HitMetButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+//
       }
       if !alertIsVisible {
         SliderView(sliderValue: $sliderValue)

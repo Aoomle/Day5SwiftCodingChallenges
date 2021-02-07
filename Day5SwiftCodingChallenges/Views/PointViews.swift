@@ -15,11 +15,14 @@ struct PointViews: View {
   var body: some View {
     
     VStack(spacing: 10){
+      let roundValue = Int(sliderValue.rounded())
+      let points = game.points(sliderValue: roundValue)
       InstructionText(text: "The slider's value is")
-      BigNumber(text: "\(sliderValue)")
-      BodyText(text: "You scored \(game.score) points\n 🎉🎉🎉")
+      BigNumber(text: "\(roundValue)")
+      BodyText(text: "You scored \(points) points\n 🎉🎉🎉")
       Button(action: {
-        alertIsVisble = true
+        alertIsVisble = false
+        game.startNewRound(points: points)
       }) {
         ButtonText(text: "Start New Round")
       }
